@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Scripture">
+
+    <EditText
+        android:layout_alignParentTop="true"
+        android:id="@+id/Book"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Scripture Book"
+        android:inputType="text"/>
+    <EditText
+        android:layout_below="@+id/Book"
+        android:id="@+id/Chapter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Scripture Chapter"
+        android:inputType="number"/>
+    <EditText
+        android:layout_below="@+id/Chapter"
+        android:id="@+id/Verse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Scripture Verse"
+        android:inputType="number"/>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="displayScripture"
+        android:id="@+id/Submit"
+        android:text="Share"/>
+</RelativeLayout>
